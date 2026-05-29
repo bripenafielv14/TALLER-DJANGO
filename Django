@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brittany Jalitza Peñafiel Villamar</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Poppins', sans-serif;
+        }
+
+        body{
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb);
+            color:white;
+        }
+
+        header{
+            width:100%;
+            padding:20px 8%;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            position:fixed;
+            top:0;
+            z-index:1000;
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        .logo{
+            font-size:28px;
+            font-weight:bold;
+            color:white;
+        }
+
+        nav a{
+            text-decoration:none;
+            color:white;
+            margin-left:25px;
+            transition:0.3s;
+        }
+
+        nav a:hover{
+            color:#ffe4f2;
+        }
+
+        .hero{
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            padding:20px;
+        }
+
+        .hero-content{
+            max-width:700px;
+            background: rgba(255,255,255,0.15);
+            padding:50px;
+            border-radius:25px;
+            backdrop-filter: blur(15px);
+            box-shadow:0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .hero h1{
+            font-size:50px;
+            margin-bottom:20px;
+        }
+
+        .hero p{
+            font-size:20px;
+            margin-bottom:30px;
+        }
+
+        .btn{
+            display:inline-block;
+            padding:14px 30px;
+            background:white;
+            color:#ff5f9e;
+            text-decoration:none;
+            border-radius:40px;
+            font-weight:bold;
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            transform:scale(1.05);
+            background:#ffe4f2;
+        }
+
+        .info{
+            padding:80px 10%;
+        }
+
+        .titulo{
+            text-align:center;
+            margin-bottom:50px;
+        }
+
+        .titulo h2{
+            font-size:40px;
+        }
+
+        .cards{
+            display:grid;
+            grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+            gap:25px;
+        }
+
+        .card{
+            background: rgba(255,255,255,0.15);
+            padding:35px;
+            border-radius:20px;
+            text-align:center;
+            backdrop-filter: blur(10px);
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-10px);
+            background: rgba(255,255,255,0.25);
+        }
+
+        .card h3{
+            margin-bottom:15px;
+            font-size:24px;
+        }
+
+        footer{
+            text-align:center;
+            padding:20px;
+            background: rgba(0,0,0,0.2);
+        }
+
+        @media(max-width:768px){
+
+            .hero h1{
+                font-size:35px;
+            }
+
+            nav{
+                display:none;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <header>
+
+        <div class="logo">Brittany</div>
+
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Sobre mí</a>
+            <a href="#">Contacto</a>
+        </nav>
+
+    </header>
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>Brittany Jalitza Peñafiel Villamar</h1>
+
+            <p>
+                Bienvenido a mi landing page personal ✨
+                Aquí podrás conocer un poco más sobre mí y mis datos personales.
+            </p>
+
+            <a href="#" class="btn">Descubrir Más</a>
+
+        </div>
+
+    </section>
+
+    <section class="info">
+
+        <div class="titulo">
+            <h2>Información Personal</h2>
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>🎂 Edad</h3>
+                <p>19 años</p>
+            </div>
+
+            <div class="card">
+                <h3>🌎 Nacionalidad</h3>
+                <p>Ecuatoriana</p>
+            </div>
+
+            <div class="card">
+                <h3>📍 Dirección</h3>
+                <p>Milagro - Ecuador</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© 2026 Brittany Jalitza Peñafiel Villamar</p>
+    </footer>
+
+</body>
+</html>
